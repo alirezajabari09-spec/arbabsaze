@@ -1,90 +1,143 @@
-<section id="home" class="hero">
-<h2>خانه رویایی شما فقط یک کلیک فاصله دارد</h2>
-<p>بهترین املاک را در بهترین مناطق با قیمت‌های بی‌نظیر بیابید.</p>
-<a href="#properties" class="btn">مشاهده املاک</a>
-</section>
+.project-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
 
-<section id="properties" class="container">
-<h2 class="section-title">آخرین املاک اضافه شده</h2>
-<div class="property-grid">
-<div class="property-card">
-<img src="https://via.placeholder.com/400x200/FF5733/FFFFFF?text=ویلا+لوکس" alt="ویلا لوکس">
-<div class="property-info">
-<h3>ویلا لوکس در شمال</h3>
-<p>ویلا مدرن با 3 اتاق خواب، 2 حمام، استخر اختصاصی و منظره دریاچه‌.</p>
-<p class="property-price">قیمت: ۱۲,۵۰۰,۰۰۰,۰۰۰ تومان</p>
-</div>
-</div>
-<div class="property-card">
-<img src="https://via.placeholder.com/400x200/33FF57/FFFFFF?text=آپارتمان+مرکزی" alt="آپارتمان مرکزی">
-<div class="property-info">
-<h3>آپارتمان نوساز در مرکز شهر</h3>
-<p>۲ خوابه، فول امکانات، دسترسی آسان به مترو و مراکز خرید.</p>
-<p class="property-price">قیمت: ۴,۷۰۰,۰۰۰,۰۰۰ تومان</p>
-</div>
-</div>
-<div class="property-card">
-<img src="https://via.placeholder.com/400x200/3357FF/FFFFFF?text=زمین+کشاورزی" alt="زمین کشاورزی">
-<div class="property-info">
-<h3>زمین کشاورزی با سند تک برگ</h3>
-<p>۵۰۰۰ متر مربع زمین حاصلخیز، مناسب برای کشت و باغداری.</p>
-<p class="property-price">قیمت: ۱,۹۰۰,۰۰۰,۰۰۰ تومان</p>
-</div>
-</div>
-<div class="property-card">
-<img src="https://via.placeholder.com/400x200/FF33A1/FFFFFF?text=پنت+هاوس" alt="پنت هاوس">
-<div class="property-info">
-<h3>پنت هاوس با چشم‌انداز شهری</h3>
-<p>۴ خوابه، تراس بزرگ، جکوزی، و طراحی داخلی بی‌نظیر.</p>
-<p class="property-price">قیمت: ۲۵,۰۰۰,۰۰۰,۰۰۰ تومان</p>
-</div>
-</div>
-</div>
-</section>
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
 
-<section id="about" class="container">
-<h2 class="section-title">درباره ما</h2>
-<p>
-ما در "املاک برتر" با بیش از ۱۰ سال تجربه در زمینه خرید و فروش املاک،
-متعهد به ارائه بهترین و شفاف‌ترین خدمات به مشتریان خود هستیم. هدف ما
-یافتن ملک رویایی شما و یا فروش ملک شما در کوتاه‌ترین زمان و با بهترین قیمت است.
-تیم مجرب ما آماده مشاوره و همراهی شما در تمام مراحل معامله می‌باشد.
-</p>
-<p>
-با دانش عمیق از بازار محلی و شبکه گسترده ارتباطات، ما اطمینان می‌دهیم
-که تجربه خرید یا فروش ملک شما بی‌دردسر و موفقیت‌آمیز خواهد بود.
-</p>
-</section>
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
 
-<section id="contact" class="container">
-<h2 class="section-title">تماس با ما</h2>
-<div class="contact-form">
-<p>برای دریافت مشاوره رایگان و کسب اطلاعات بیشتر، فرم زیر را پر کنید:</p>
-<form>
-<label for="name">نام کامل:</label>
-<input type="text" id="name" name="name" required>
+        .project-card-content {
+            padding: 20px;
+        }
 
-<label for="email">ایمیل:</label>
-<input type="email" id="email" name="email" required>
+        .project-card h3 {
+            margin-top: 0;
+            color: #5A2D5C;
+            font-size: 1.5em;
+        }
 
-<label for="phone">شماره تلفن:</label>
-<input type="tel" id="phone" name="phone">
+        .project-card p {
+            font-size: 0.9em;
+            color: #666;
+        }
 
-<label for="message">پیام شما:</label>
-<textarea id="message" name="message" required></textarea>
+        .project-card .price {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #F8C300;
+            margin-top: 15px;
+            display: block;
+        }
 
-<button type="submit">ارسال پیام</button>
-</form>
-</div>
-</section>
+        .about-us-section, .contact-section {
+            background-color: #fff;
+            padding: 40px 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
 
-<footer>
-<div class="container">
-<p>&copy; 2023 املاک برتر. تمامی حقوق محفوظ است.</p>
-<p>آدرس: تهران، خیابان اصلی، پلاک ۱۲۳ | تلفن: ۰۲۱-۱۲۳۴۵۶۷۸ | ایمیل: info@example.com</p>
-</div>
-</footer>
-</body>
-</html>
-# arbabsaze
-arbabsaze
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #5A2D5C;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+            font-family: 'Vazirmatn', sans-serif;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .contact-form button {
+            background-color: #5A2D5C;
+            color: #fff;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #432145;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            nav ul li {
+                margin: 0 10px;
+            }
+            .hero-section h2 {
+                font-size: 2em;
+            }
+            .hero-section p {
+                font-size: 1em;
+            }
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <!-- لینک عکس لوگوی خود را اینجا قرار دهید. ابتدا عکس را آنلاین آپلود کنید. -->
+            <img src="https://via.placeholder.com/150" alt="لوگو مهدی احمدی">
+        </div>
+        <h1>مهدی احمدی<span>پیش فروش ملک در مشهد</span></h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">خانه</a></li>
+            <li><a href="#projects">پروژه‌ها</a></li>
+            <li><a href="#about">درباره ما</a></li>
+            <li><a href="#contact">تماس با ما</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section id="home" class="hero-section">
+            <h2>فرصت‌های بی‌نظیر پیش‌خرید ملک در مشهد</h2>
+            <p>با ما بهترین پروژه‌های مسکونی و تجاری را قبل از اتمام ساخت کشف کنید.</p>
+            <a href="#projects" class="btn">مشاهده پروژه‌ها</a>
+        </section>

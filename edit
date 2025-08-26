@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ارباب سازه</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Tahoma, sans-serif;
+            background: url('https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=1950&q=80')
+                        no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2em;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            background: rgba(0, 0, 0, 0.6);
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 900px;
+            border-radius: 10px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        p {
+            line-height: 1.8;
+            text-align: justify;
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 15px;
+        }
+        .project-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .project-card img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        footer {
+            background: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9em;
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.6em; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>شرکت ارباب سازه</h1>
+    <nav>
+        <a href="#about">درباره ما</a>
+        <a href="#projects">پروژه‌ها</a>
+        <a href="#contact">تماس با ما</a>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>درباره ما</h2>
+    <p>
+        شرکت ارباب سازه با سال‌ها تجربه در حوزه ساخت‌وساز و عمران، افتخار دارد پروژه‌هایی با بالاترین کیفیت و استانداردهای روز ارائه دهد. 
+        دفتر مرکزی ما در مشهد، خیابان گویا ۱۲ واقع شده است. هدف ما ایجاد فضاهایی ایمن، زیبا و مدرن برای زندگی و کار شماست.
+    </p>
+</section>
+
+<section id="projects">
+    <h2>پروژه‌های در حال ساخت</h2>
+    <div class="projects-grid">
+        <div class="project-card">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" alt="امیریه ۳">
+            <h3>امیریه ۳</h3>
+            <p>پروژه مسکونی بزرگ با طراحی مدرن و امکانات کامل در منطقه امیریه.</p>
+        </div>
+        <div class="project-card">
+            <img src="https://images.unsplash.com/photo-1580584128409-7c1e1a9cd2f1?auto=format&fit=crop&w=800&q=80" alt="مهدیه ۱">
+            <h3>مهدیه ۱</h3>
+            <p>ساختمان مسکونی لوکس با دسترسی عالی و نماهای مدرن.</p>
+        </div>
+        <div class="project-card">
+            <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80" alt="مهدیه ۲">
+            <h3>مهدیه ۲</h3>
+            <p>پروژه در حال تکمیل با کیفیت ساخت بالا در منطقه مهدیه.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>تماس با ما</h2>
+    <p>برای ارتباط با ما می‌توانید از شماره تماس زیر استفاده کنید:</p>
+    <p><strong>📞 09371655633</strong></p>
+    <p>آدرس دفتر: مشهد، خیابان گویا ۱۲</p>
+</section>
+
+<footer>
+    <p>© کلیه حقوق این وبسایت متعلق به شرکت ارباب سازه است.</p>
+</footer>
+
+</body>
+</html>
